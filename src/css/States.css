@@ -1,0 +1,197 @@
+.product span {
+  font-size: 100px;
+}
+
+.wrapper {
+  /* padding: 20px; */
+  font-size: 20px;
+}
+
+.wrapper button {
+  font-size: 20px;
+  /* background: none; */
+}
+/* .orderdetails{
+    border: 1px solid black;
+    height: 150px;
+} */
+.orderdetails fieldset {
+  height: 120px;
+  padding: 10px;
+  width: 210px;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+.product {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.products {
+  padding: 20px;
+  position: relative;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+.top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+  /* padding-bottom: 10px; */
+  height: auto;
+  background-color: yellow;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 50px;
+
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+.cartdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6px;
+    /* grid-template-rows: repeat(3, auto); */
+  }
+  .ordercard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6px;
+    /* grid-template-rows: repeat(3, auto); */
+  }
+}
+@media screen and (max-width: 992px) {
+  .products {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6px;
+    /* grid-template-rows: repeat(3, auto); */
+  }
+  .container {
+    /* position: -webkit-sticky; */
+    position: relative;
+    /* top: 0; */
+    display: flex;
+    flex-direction: column;
+  }
+  .top {
+    position: relative;
+  }
+}
+
+.orderdetails fieldset::-webkit-scrollbar {
+  width: 5px;
+}
+
+.orderdetails fieldset::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.orderdetails fieldset::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.header {
+  text-align: center;
+  font-weight: 400;
+  background-color: chartreuse;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer {
+  background-color: yellow;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  /* width: 100%; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.container-fluid {
+  /* display: flex; */
+  margin-bottom: 30px;
+}
+.container1 {
+  /* float: right; */
+  border: 1px solid black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: yellow;
+  overflow-y: scroll;
+  /* right:0; */
+  /* margin-right: 20px; */
+  /* margin-top: 20px; */
+  /* height: 440px; */
+  z-index: 1;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container1 h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.ordercard {
+  /* border: 1px solid black; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  padding: 10px;
+  /* position: fixed; */
+  /* width: 100%; */
+}
+.ordercardcontent {
+  width: 330px;
+  border: 1px solid black;
+  /* background-color: rgba(0, 255, 21, 0.342); */
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+td{
+  padding: 10px;
+}
+.ordercardcontent:nth-child(odd){
+  background-color: rgba(0, 255, 21, 0.342);
+}
+.ordercardcontent:nth-child(even){
+  background-color: rgba(12, 247, 235, 0.363);
+}

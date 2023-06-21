@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.movieblock{
+    overflow:hidden;
+    /* width: 250px; */
+    border: 1px solid black;
+}
+@media screen and (min-width: 992px) {
+  .mmmmm{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6px;
+    /* grid-template-rows: repeat(3, auto); */
+  }
+}

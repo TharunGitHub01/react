@@ -1,0 +1,19 @@
+.icons{
+    background-color:white;
+    height: auto;
+    width: 100%;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    overflow-x: hidden;
+    display: flex;
+}
+.icons img{
+    width: 55%;
+    /* height: 50px; */
+    aspect-ratio: 3/2;
+    cursor: pointer;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+}

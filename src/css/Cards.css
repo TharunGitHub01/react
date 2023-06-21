@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    margin: 10px;
+    /* width: 50%; */
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .img img{
+    width: 125px;
+    height: 125px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+@media screen and (min-width: 992px) {
+  .mmmmm{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6px;
+    /* grid-template-rows: repeat(3, auto); */
+  }
+}
